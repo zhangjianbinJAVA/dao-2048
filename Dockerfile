@@ -20,7 +20,7 @@ RUN ln -sf /dev/stdout /var/log/nginx/access.log \
 COPY . /usr/share/nginx/html
 
 # 添加数据卷
-VOLUME /home/dev-soft /home/dev
+VOLUME /home/dev-soft/ /home/dev/
 
 EXPOSE 80
 
