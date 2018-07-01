@@ -19,6 +19,9 @@ RUN ln -sf /dev/stdout /var/log/nginx/access.log \
 # Add 2048 stuff into Nginx server
 COPY . /usr/share/nginx/html
 
+# 添加数据卷
+VOLUME /home/dev-soft /home/dev
+
 EXPOSE 80
 
 # Start Nginx and keep it running background and start php
